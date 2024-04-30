@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Teste</title>
+</head>
+<body>
+
+<script>
+	
+var num1 = prompt("Digite o numero 1: ");
+var num2 = prompt("Digite o numero 2: ");
+var condicao =  confirm("Deseja realizar a operacao? ")
+
+function calcularSomar(num1, num2){
+	var int1 = parseInt(num1);
+    var int2 = parseInt(num2);
+
+    resultado = int1 + int2;	
+
+    alert(resultado);
+}
+
+
+if(condicao){
+	calcularSomar(num1, num2);	
+}else{
+	alert("Operacao Cancelada");	
+}
+</script>
+
+</body>
+</html>
