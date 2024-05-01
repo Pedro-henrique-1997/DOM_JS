@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 2</title>
+</head>
+<body>
+	<div id="container">
+		<h1 class="titulo">Ola Mundo</h1>
+		<h2 class="titulo">Ola Mundo</h2>
+	</div>
+
+	<div id="conteudo2">
+		<input type="text" name="campo" placeholder="Coloque aqui alguma coisa" id="campo">
+
+<button onclick="mostrarValor()" id="botao">Clique Aqui</button>
+
+<button id="btn" onclick="exibir()">Teste</button>
+<div id="div">
+	
+</div>
+	</div>
+<script>
+	var div = document.getElementById("container");
+    var conteudo = document.getElementsByClassName("titulo");
+
+    function mostrarValor(){
+    	var valor = document.getElementById("campo").value;
+    	var teste = document.getElementById("conteudo2").innerHTML = "Clicou";
+    	alert("Ola " + valor);
+    	console.log(valor);
+    }
+
+    function exibir(){
+    	var txt = document.getElementById("div").innerHTML = "clicou";
+    }
+    
+</script>
+
+</body>
+</html>
