@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 4</title>
+</head>
+<body>
+
+	<p class="txt" id="texto">Teste 1</p>
+
+	<p class="txt" id="texto">Teste 2</p>
+
+
+	<input type="text" name="nome" id="nome" placeholder="Aqui">
+
+	<input type="int" name="numero"  placeholder="Numero:">
+<span name="teste"></span>
+
+	<button onclick="validar()">Mande Aqui</button>
+
+<script>
+	var elemento = document.querySelector("#texto");
+	var elementos =  document.querySelectorAll(".txt");
+	console.log(elementos);
+
+	function validar(){
+		var nome = document.querySelector("#nome").value;
+        var dados = document.querySelector("span");
+
+        dados.innerHTML = nome;
+	}
+
+</script>
+
+</body>
+</html>
