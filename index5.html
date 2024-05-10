@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 5</title>
+</head>
+<body>
+
+	<span id="texto">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+	</span>
+
+	<br>
+
+	<span id="texto">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+	</span>
+
+	<br>
+
+	<button onclick="mudarTexto()">Mudar</button>
+
+<script>
+	
+	function mudarTexto(){
+		var texto = document.querySelector("#texto");
+		var todos = document.querySelectorAll("span");
+	    var complemento = texto.innerHTML = "teste";
+	    console.log(todos);
+	}
+	
+</script>
+</body>
+</html>
