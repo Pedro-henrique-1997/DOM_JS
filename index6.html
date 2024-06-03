@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 6</title>
+
+	<style>
+		.blue{
+			color: blue;
+		}
+
+		.red{
+			color: red;
+		}
+
+		.barra{
+			background-color: yellow;
+		}
+
+		.fundo{
+			background-color: black;
+		}
+
+		.green{
+			color: green;
+		}
+	</style>
+</head>
+<body>
+
+	<p id="text" class="texto">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+	</p>
+
+	<p id="text2" class="red">
+		Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+	</p>
+
+<script>
+	var texto = document.getElementById("text");
+	var texto2 = document.getElementById("text2");
+
+	if(texto2.classList.contains("red")){
+		texto2.classList.remove("red");
+	    texto2.classList.add("blue");
+	}
+	
+	texto.classList.add("blue");
+	texto.classList.remove("texto");
+
+	texto.classList.add("red");
+	texto.classList.add("barra");
+
+	if(texto.classList.contains("barra")){
+		var confirmacao = "esta com o background-color de cor amarelo. Deseje alterar para preto?";
+		
+		if(confirm(confirmacao)){
+			texto.classList.replace("barra", "fundo");
+			texto.classList.replace("red", "green");
+		}
+		
+	}
+</script>
+</body>
+</html>
