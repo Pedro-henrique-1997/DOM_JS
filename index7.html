@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 7</title>
+
+	<style>
+		.texto{
+			background-color: blue;
+		}
+
+		.texto2{
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+
+<p class="tex" id="txt">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+</p>
+
+<div id="container">
+	
+</div>
+
+<div id="barra">
+	
+</div>
+
+<script>
+	var texto = document.getElementById("txt");
+
+    texto.style.color = "red";
+    texto.style.fontSize = "1.4em";	
+
+    const div = document.querySelector("#container");
+
+    div.style.width = "100px";
+    div.style.height = "100px";
+    div.style.backgroundColor = "red";
+
+    const barra = document.querySelector("#barra");
+
+    barra.style.width = "100px";
+    barra.style.height = "100px";
+    barra.style.backgroundColor = "blue";
+</script>
+
+</body>
+</html>
