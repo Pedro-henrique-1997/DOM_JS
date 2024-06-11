@@ -12,25 +12,32 @@
 	</style>
 </head>
 <body>
+	<div id="container">
+		
+	</div>
 
 <script>
 	var div = document.createElement("div");
 
+	const container = document.querySelector("#container");
+
 	div.innerHTML = "teste";
-console.log(div);
 	div.style.width = "100px";
 	div.style.height = "100px";
 	div.style.backgroundColor = "red";
+
+	container.appendChild(div);
 
 	console.log("Criando o Span");
 
 	for(var i = 0; i <= 5; i++){
 var span = document.createElement("span");
-span.innerHTML = "Span" + i;
+span.innerHTML = "Span" + i + "<br>";
 span.classList.add("classeSpan");
-	console.log(span);
-
+	container.appendChild(span);
+    //container.removeChild(span);
 	}	
+
 
 </script>
 </body>
