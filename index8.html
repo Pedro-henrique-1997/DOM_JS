@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 8</title>
+
+	<style>
+		.classeSpan{
+			background-color: yellow;
+			width: 200px;
+			height: 200px;
+		}
+	</style>
+</head>
+<body>
+
+<script>
+	var div = document.createElement("div");
+
+	div.innerHTML = "teste";
+console.log(div);
+	div.style.width = "100px";
+	div.style.height = "100px";
+	div.style.backgroundColor = "red";
+
+	console.log("Criando o Span");
+
+	for(var i = 0; i <= 5; i++){
+var span = document.createElement("span");
+span.innerHTML = "Span" + i;
+span.classList.add("classeSpan");
+	console.log(span);
+
+	}	
+
+</script>
+</body>
+</html>
