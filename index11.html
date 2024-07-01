@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+		.quadro{
+			width: 100px;
+			height: 100px;
+			background-color: red;
+			border-style: dashed;
+		}
+	</style>
 	<title></title>
 </head>
 <body>
+	<button onclick="mostrarQuadro()">Clique Aqui</button>
 	<main id="container">
 		<div id="lista-container">
 			<ul id="lista">
@@ -48,6 +57,14 @@
 	const neto = document.querySelector("#elementoNeto");
 
 	console.log(filho.parentNode);
+
+	function mostrarQuadro(){
+	   const main = document.getElementById("container");
+       
+       const divQuadro = document.createElement("div");
+       divQuadro.classList.add("quadro");
+       main.appendChild(divQuadro);
+	}
 </script>
 
 </body>

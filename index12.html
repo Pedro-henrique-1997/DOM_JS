@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 12</title>
+	<style>
+		.estilo{
+			background-color: blue;
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+	<div id=area>
+		<p onmouseover="aparecer()" onmouseout="aparecer2()">Passe o mouse aqui</p>
+	</div>
+
+<script>
+	var area = document.getElementById("area");
+
+	var titulo = document.createElement("h1");
+	titulo.innerHTML = "Aula 12";
+	area.appendChild(titulo);
+
+	var quadrado = document.createElement("div");
+	quadrado.classList.add("estilo");
+	quadrado.innerHTML = "teste";
+	area.appendChild(quadrado);
+
+	function aparecer(){
+		var result = document.querySelector("p");
+		result.innerHTML = "Deu certo";
+	}
+
+	function aparecer2(){
+		var result = document.querySelector("p");
+		result.innerHTML = "Passe o mouse aqui";
+	}
+</script>
+</body>
+</html>
