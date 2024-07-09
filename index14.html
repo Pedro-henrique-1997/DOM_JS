@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 14</title>
+</head>
+<body>
+
+<form onsubmit="enviar()">
+	<label>Digite sua idade: </label>
+	<input type="number" id="age" placeholder="18">
+
+	<button>Enviar</button>
+</form>
+<script>
+	function enviar(){
+		var idade = document.getElementById("age");
+		console.log(idade);
+		if(idade.value < 18){
+			alert("Menor de idade");
+		}else{
+			alert("Maior de idade");
+		}
+	}
+
+</script>
+</body>
+</html>
